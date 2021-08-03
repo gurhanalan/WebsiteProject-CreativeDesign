@@ -29,8 +29,12 @@ html {
     font-size: 10rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #999;
+    color: hsl(0, 0%, 50%);
     text-align: center;
-    opacity: 0.1;
+    opacity: 0.5;
     text-shadow: 2rem 2rem 4rem #aaa;
+
+    @include respond(tab-port) {
+        font-size: 7rem;
+    }
 }

@@ -62,7 +62,7 @@
 
 .header {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -79,11 +79,14 @@
         text-shadow: 0.3rem 0.3rem 0.3rem rgb(49, 49, 49);
         color: #fff;
         background-color: #fff;
-        width: 85rem;
+        // width: 85rem;
         text-align: center;
         padding: 0.8rem 1.6rem;
         border-radius: 0.8rem;
         opacity: 0.9;
+        @include respond(tab-port) {
+            font-size: 7rem;
+        }
     }
 
     &__logo {

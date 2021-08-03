@@ -34,10 +34,13 @@ html {
   font-size: 10rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #999;
+  color: gray;
   text-align: center;
-  opacity: 0.1;
+  opacity: 0.5;
   text-shadow: 2rem 2rem 4rem #aaa; }
+  @media only screen and (max-width: 56.25em) {
+    .section-heading {
+      font-size: 7rem; } }
 
 .floating-bg {
   height: 150vw;
@@ -89,7 +92,7 @@ html {
 
 .header {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -101,12 +104,61 @@ html {
     text-shadow: 0.3rem 0.3rem 0.3rem #313131;
     color: #fff;
     background-color: #fff;
-    width: 85rem;
     text-align: center;
     padding: 0.8rem 1.6rem;
     border-radius: 0.8rem;
     opacity: 0.9; }
+    @media only screen and (max-width: 56.25em) {
+      .header__heading {
+        font-size: 7rem; } }
   .header__logo i {
     font-size: 15rem;
     color: rgba(50, 231, 255, 0.8);
     text-shadow: 0.1rem 0.1rem 0.2rem #ddd, -0.1rem -0.1rem 0.2rem #ddd; }
+
+.section-2 {
+  padding: 10rem 0; }
+
+.customers-wrapper {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10rem; }
+
+.customer {
+  max-width: 30rem;
+  padding: 2rem;
+  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
+  transition: box-shadow 0.5s;
+  flex-basis: 40rem; }
+  .customer-text {
+    font-size: 1.8rem;
+    text-align: justify; }
+  .customer > i {
+    font-size: 4rem;
+    color: #f08e0f; }
+  .customer-rating {
+    display: flex; }
+    .customer-rating i {
+      font-size: 2rem;
+      color: #f08e0f; }
+  .customer-img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%; }
+  .customer-name {
+    font-size: 2rem; }
+  .customer:nth-child(1) {
+    transform: translateY(3rem); }
+  .customer:nth-child(3) {
+    transform: translateY(-3rem); }
