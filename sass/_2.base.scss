@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+
 *,
 *::after,
 *::before {
@@ -9,7 +11,9 @@
 
 html {
     font-size: 62.5%; // 1 rem = 10 px; 10px/16px = 62.5
-
+    scroll-behavior: smooth;
+    font-family: "Bellota Text", cursive;
+    font-weight: 400;
     // @include respond(tab-land) {
     //    font-size: 56.25%; //1 rem = 9px; 9/16=
     // }
@@ -21,5 +25,12 @@ html {
     // }
 }
 
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.section-heading {
+    font-size: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+    text-align: center;
+    opacity: 0.1;
+    text-shadow: 2rem 2rem 4rem #aaa;
+}

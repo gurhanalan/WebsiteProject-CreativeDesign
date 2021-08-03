@@ -15,7 +15,7 @@ ORDER : Base + typograpy > general layout + grid > page layout > componenets
 1em = 16px
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
 *,
 *::after,
 *::before {
@@ -25,4 +25,88 @@ ORDER : Base + typograpy > general layout + grid > page layout > componenets
   font-family: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Bellota Text", cursive;
+  font-weight: 400; }
+
+.section-heading {
+  font-size: 10rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+  text-align: center;
+  opacity: 0.1;
+  text-shadow: 2rem 2rem 4rem #aaa; }
+
+.floating-bg {
+  height: 150vw;
+  width: 150vw;
+  position: absolute;
+  top: -125vw;
+  left: calc(50% - 75vw);
+  background-color: rgba(50, 231, 255, 0.8);
+  border-radius: 45%;
+  animation: rotate 30s infinite;
+  z-index: -1; }
+  .floating-bg::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 40%;
+    background-color: rgba(50, 231, 255, 0.1);
+    animation: rotate 30s infinite; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  height: 15rem; }
+  .navbar__link {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    display: inline;
+    word-wrap: break-word;
+    width: 1rem;
+    height: 15rem;
+    transition: all 0.3s;
+    color: #fff;
+    text-align: center; }
+    .navbar__link:hover {
+      width: 15rem;
+      transition: all 1s;
+      background-color: rgba(255, 255, 255, 0.2); }
+
+.header {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .header__heading {
+    font-size: 8rem;
+    font-family: "Monoton", cursive;
+    text-shadow: 0.3rem 0.3rem 0.3rem #313131;
+    color: #fff;
+    background-color: #fff;
+    width: 85rem;
+    text-align: center;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.8rem;
+    opacity: 0.9; }
+  .header__logo i {
+    font-size: 15rem;
+    color: rgba(50, 231, 255, 0.8);
+    text-shadow: 0.1rem 0.1rem 0.2rem #ddd, -0.1rem -0.1rem 0.2rem #ddd; }
