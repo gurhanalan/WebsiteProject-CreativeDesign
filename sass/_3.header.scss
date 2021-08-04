@@ -9,6 +9,13 @@
     animation: rotate 30s infinite;
     z-index: -1;
 
+    @include respond(tab-port) {
+        top: -100vw;
+    }
+    @include respond(phone) {
+        top: -75vw;
+    }
+
     &::after {
         content: "";
         height: 100%;
@@ -84,8 +91,8 @@
         padding: 0.8rem 1.6rem;
         border-radius: 0.8rem;
         opacity: 0.9;
-        @include respond(tab-port) {
-            font-size: 7rem;
+        @include respond(phone) {
+            font-size: 5rem;
         }
     }
 
@@ -94,6 +101,10 @@
             font-size: 15rem;
             color: rgba(50, 231, 255, 0.8);
             text-shadow: 0.1rem 0.1rem 0.2rem #ddd, -0.1rem -0.1rem 0.2rem #ddd;
+
+            @include respond(tab-land) {
+                font-size: 10rem;
+            }
         }
     }
 }

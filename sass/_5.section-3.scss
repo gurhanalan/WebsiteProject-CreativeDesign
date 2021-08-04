@@ -9,6 +9,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10rem;
+    padding: 0 3rem;
 }
 
 .team-member {
@@ -20,7 +21,7 @@
     background-color: #fffeee;
     box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
     position: relative;
-    flex-basis: 40rem;
+    flex-basis: 36rem;
 
     &__img {
         width: 30rem;
